@@ -1,0 +1,46 @@
+{
+	"data-dir": "/home/amogh/data/datasets/VOC/VOCdevkit/VOC2012/",
+	"data-dir_deep": "/mnt/md0/2019Fall/VOC/VOCdevkit/VOC2012",
+	"list-dir": null,
+	"classes": 21,
+
+	"crop-size": 424,
+	"step": 200,
+	"arch": "drn_d_22",
+
+	"print_freq": 100,
+
+	"batch-size": 1,
+	"test-batch-size": 1,
+	"epochs": 10,
+
+	"lr": 0.1,
+	"lr-mode":"step",
+	"momentum": 0.9,
+	"weight-decay": 1e-4,
+	"pretrained": "/home/amogh/columbia/research/segmentation/RobustSeg/models/drn_d_22_cityscapes.pth",
+	"pretrained_deep": "/mnt/md0/2019Fall/model_zoo/DRN/drn_d_22_cityscapes.pth",
+
+	"backup_output_dir": "/home/amogh/columbia/research/segmentation/RobustSeg_training_backup/",
+	"backup_output_dir_deep": "/mnt/md0/2019Fall/SegSaveLog",
+
+	"workers": 8,
+	"phase": "val",
+	"random-scale": 0,
+	"random-rotate": 0,
+
+
+	"MC_times": 5,
+	"reg_lambda": 0.001,
+	"drop_ratio": 0.001,
+
+	"downsize_scale": 1,
+	"steps": 5,
+
+	"epsilon": 8,
+	"step_size": 2,
+	"pixel_scale": 255,
+
+	"base_size": 513
+
+}

@@ -1,0 +1,71 @@
+{
+	"data-dir": "/local/rcs/ECCV/Cityscape/cityscape_dataset",
+	"data-dir_amogh": "/home/amogh/data/datasets/drn_data/DRN-move/cityscape_dataset/",
+	"data-dir_deep": "/mnt/md0/2019Fall/cityscape_dataset",
+	"data-dir_hulk": "/local/rcs/ECCV/Cityscape/cityscape_dataset",
+	"list-dir": null,
+	"classes": 19,
+
+	"crop-size": 256,
+	"step": 180,
+	"arch": "drn_d_22",
+
+	"print_freq": 100,
+
+	"batch-size": 1,
+	"test-batch-size": 2,
+	"epochs": 200,
+
+	"lr": 0.01,
+	"lr-mode":"step",
+	"momentum": 0.9,
+	"weight-decay": 1e-4,
+	"pretrained": "",
+	"pretrained_amogh": "/home/amogh/columbia/research/segmentation/RobustSeg/models/drn_d_22_cityscapes.pth",
+	"pretrained_deep": "/mnt/md0/2019Fall/model_zoo/DRN/drn_d_22_cityscapes.pth",
+	"pretrained_hulk": "/local/rcs/ECCV/Cityscape/model_zoo/DRN/drn_d_22_cityscapes.pth",
+
+	"mt_lambda": 0.01,
+	"step_size_schedule": [[0,0.01],[180,0.001],[200,0.0001]],	
+	"lr_change":0,
+
+	"backup_output_dir": "../backup/cityscape/lam-0-01/",
+	"backup_output_dir_amogh": "/home/amogh/columbia/research/segmentation/RobustSeg_training_backup/",
+	"backup_output_dir_deep": "/mnt/md0/2019Fall/SegSaveLog/cityscape",
+	"backup_output_dir_hulk": "/local/rcs/ECCV/Cityscape/SaveLog",
+
+	"workers": 8,
+	"phase": "val",
+	"random-scale": 0,
+	"random-rotate": 0,
+
+	"MC_times": 5,
+	"reg_lambda": 0.01,
+	"entropy_lambda": 0.001,
+	"drop_ratio": 0.002,
+
+	"train_category": [2, 13, 14,3, 10, 11],
+	"train_category-bk": [2, 13, 14,3, 10, 11],
+	"others_id": 16,
+	"----catetory:  0 Road, 1 sidewalk 2 building, 3 wall(n), 4 , 5 traffic light, 11 people, ": 0,
+	"downsize_scale": 1,
+	"steps": 1,
+	"weight_mul": 1,
+
+	"epsilon": 8,
+	"step_size": 2,
+	"pixel_scale": 255,
+
+	"base_size": 513,
+
+    "val_freq": 5,
+
+	"adv_val": false,
+
+
+	"task_set": [],
+	"task_set2": ["segmentsemantic", "depth_zbuffer", "reconstruct"],
+    "task_set_lambda": [1],
+    "test_task_set": ["segmentsemantic"]
+
+}

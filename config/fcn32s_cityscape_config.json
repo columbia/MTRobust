@@ -1,0 +1,27 @@
+{
+	"data-dir": "/home/amogh/data/datasets/drn_data/DRN-move/cityscape_dataset/",
+	"data-dir_deep": "/mnt/md0/2019Fall/cityscape_dataset",
+
+	"list-dir": null,
+	"classes": 21,
+	"crop-size": 0,
+	"step": 200,
+	"arch": "fcn32s",
+	"batch-size": 1,
+	"epochs": 10,
+	"lr": 0.9,
+	"lr-mode":"step",
+	"momentum": 0.9,
+	"weight-decay": 1e-4,
+
+	"pretrained": "/home/amogh/data/models/pytorch/fcn32s_from_caffe.pth",
+	"pretrained_deep": "/mnt/md0/2019Fall/pytorch-fcn/modelzoo/fcn32s_from_caffe.pth",
+
+	"workers": 8,
+	"phase": "val",
+	"random-scale": 0,
+	"random-rotate": 0,
+
+	"downsize_scale": 4
+
+}

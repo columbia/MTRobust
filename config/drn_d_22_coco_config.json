@@ -1,0 +1,48 @@
+{
+	"data-dir": "../cityscape_dataset/",
+	"data-dir_amogh": "/home/amogh/data/datasets/coco/",
+	"data-dir_deep": "/mnt/md0/2019Fall/cityscape_dataset",
+	"list-dir": null,
+	"classes": 91,
+
+	"crop-size": 512,
+	"step": 200,
+	"arch": "drn_d_22",
+
+	"print_freq": 100,
+
+	"batch-size": 1,
+	"test-batch-size": 1,
+	"epochs": 250,
+
+	"lr": 0.01,
+	"lr-mode":"step",
+	"momentum": 0.9,
+	"weight-decay": 1e-4,
+	"pretrained": "",
+	"pretrained_amogh": "/home/amogh/columbia/research/segmentation/RobustSeg/models/drn_d_22_cityscapes.pth",
+	"pretrained_deep": "/mnt/md0/2019Fall/model_zoo/DRN/drn_d_22_cityscapes.pth",
+
+	"backup_output_dir": "../backup/",
+	"backup_output_dir_amogh": "/home/amogh/columbia/research/segmentation/RobustSeg_training_backup/",
+	"backup_output_dir_deep": "/mnt/md0/2019Fall/SegSaveLog",
+
+	"workers": 8,
+	"phase": "val",
+	"random-scale": 0,
+	"random-rotate": 0,
+
+	"MC_times": 5,
+	"reg_lambda": 0.001,
+	"drop_ratio": 0.001,
+
+	"downsize_scale": 1,
+	"steps": 5,
+
+	"epsilon": 8,
+	"step_size": 2,
+	"pixel_scale": 255,
+
+	"base_size": 513
+
+}

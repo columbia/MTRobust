@@ -1,0 +1,65 @@
+{
+	"data-dir": "../taskonomy-sample-model-1-master",
+	"data-dir_amogh": "/home/amogh/data/taskonomy-sample-model-1",
+	"data-dir_deep": "/mnt/md0/2019Fall/taskonomy/taskonomy-sample-model-1-master",
+	"list-dir": null,
+	"classes": 18,
+
+	"crop-size": 896,
+	"step": 100,
+	"arch": "resnet-50",
+
+	"print_freq": 200,
+
+	"batch-size": 32,
+	"test-batch-size": 128,
+	"epochs": 210,
+
+	"lr": 0.0,
+	"lr-mode":"schedule",
+	"step_size_schedule": [[0, 0.01], [120, 0.001], [200, 0.0001]],
+
+	"lr_change":0,
+	"momentum": 0.9,
+	"weight-decay": 1e-4,
+	"pretrained": "",
+	"pretrained_amogh": "",
+	"pretrained_deep": "",
+
+	"backup_output_dir": "../backup/taskonomy_210_lrs",
+	"backup_output_dir_amogh": "/home/amogh/columbia/research/segmentation/RobustSeg_training_backup/",
+	"backup_output_dir_deep": "/mnt/md0/2019Fall/SegSaveLog/taskonomy_res50-debug",
+
+	"workers": 8,
+	"phase": "val",
+	"random-scale": 0,
+	"random-rotate": 0,
+
+	"MC_times": 5,
+	"reg_lambda": 0.01,
+	"entropy_lambda": 0.001,
+	"drop_ratio": 0.002,
+
+	"train_category": [2],
+	"others_id": 16,
+	"----catetory:  0 Road, 1 sidewalk 2 building, 3 wall(n), 4 , 5 traffic light, 11 people, ": 0,
+	"downsize_scale": 1,
+
+	"weight_mul": 1,
+
+	"epsilon": 8,
+	"step_size": 2,
+	"pixel_scale": 255,
+	"steps": 5,
+
+	"base_size": 513,
+
+	"val_freq": 5,
+
+	"adv_val": false,
+
+    "task_set": ["segmentsemantic"],
+    "task_set_lambda": [1],
+    "test_task_set": ["segmentsemantic"]
+
+}

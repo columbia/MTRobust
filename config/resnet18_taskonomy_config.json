@@ -1,0 +1,68 @@
+{
+	"data-dir": "../taskonomy-sample-model-1-small-master",
+	"data-dir_amogh": "/home/amogh/data/taskonomy-sample-model-1",
+	"data-dir_deep": "/mnt/md0/2019Fall/taskonomy/taskonomy-sample-model-1-small-master",
+	"data-dir_cv04": "/proj/vondrick/mcz/MTLR/Taskonomy/taskonomy-sample-model-1-small-master",
+	"data-dir_hulk": "/local/rcs/ECCV/Taskonomy/taskonomy-sample-model-1-small-master",
+	"list-dir": null,
+	"classes": 18,
+
+	"crop-size": 896,
+	"step": 60,
+	"arch": "resnet-18",
+
+	"print_freq": 200,
+
+	"batch-size": 32,
+	"test-batch-size": 32,
+	"epochs": 150,
+
+	"lr": 0.003,
+	"lr_change": 0,
+	"lr-mode":"schedule",
+
+	"momentum": 0.9,
+	"weight-decay": 1e-4,
+	"pretrained": "",
+	"pretrained_amogh": "",
+	"pretrained_deep": "",
+
+	"backup_output_dir": "../backup/results_March_k/",
+	"backup_output_dir_amogh": "/home/amogh/columbia/research/segmentation/RobustSeg_training_backup/",
+	"backup_output_dir_deep": "/mnt/md0/2019Fall/SegSaveLog/debug",
+	"backup_output_dir_cv04": "/proj/vondrick/mcz/MTLR/Taskonomy/March_nat-A0.1",
+	"backup_output_dir_hulk": "/local/rcs/ECCV/Taskonomy/March_nat_tasko-05",
+
+	"workers": 8,
+	"phase": "val",
+	"random-scale": 0,
+	"random-rotate": 0,
+
+	"MC_times": 5,
+	"reg_lambda": 0.01,
+	"entropy_lambda": 0.001,
+	"drop_ratio": 0.002,
+
+	"train_category": [2],
+	"others_id": 16,
+	"----catetory:  0 Road, 1 sidewalk 2 building, 3 wall(n), 4 , 5 traffic light, 11 people, ": 0,
+	"downsize_scale": 1,
+
+	"weight_mul": 1,
+
+	"epsilon": 8,
+	"step_size": 2,
+	"pixel_scale": 255,
+	"steps": 5,
+
+	"base_size": 513,
+
+	"val_freq": 5,
+
+	"adv_val": false,
+
+    "task_set": ["autoencoder", "class_object", "class_places", "depth_euclidean", "depth_zbuffer", "edge_occlusion", "edge_texture", "keypoints2d", "keypoints3d", "normal", "principal_curvature", "reshading", "room_layout", "segmentsemantic", "vanishing_point"],
+    "task_set_lambda": [1],
+    "test_task_set": ["autoencoder", "class_object", "class_places", "depth_euclidean", "depth_zbuffer", "edge_occlusion", "edge_texture", "keypoints2d", "keypoints3d", "normal", "principal_curvature", "reshading", "room_layout", "segmentsemantic", "vanishing_point"]
+
+}
