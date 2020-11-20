@@ -1,13 +1,24 @@
 # Multitask Learning Strengthens Adversarial Robustness
 
 ```
-@misc{mao2020multitask,
-    title={Multitask Learning Strengthens Adversarial Robustness},
-    author={Chengzhi Mao and Amogh Gupta and Vikram Nitin and Baishakhi Ray and Shuran Song and Junfeng Yang and Carl Vondrick},
-    year={2020},
-    eprint={2007.07236},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
+@inproceedings{mao2020multitask,
+  author    = {Chengzhi Mao and
+               Amogh Gupta and
+               Vikram Nitin and
+               Baishakhi Ray and
+               Shuran Song and
+               Junfeng Yang and
+               Carl Vondrick},
+  title     = {Multitask Learning Strengthens Adversarial Robustness},
+  booktitle = {Computer Vision - {ECCV} 2020 - 16th European Conference, Glasgow,
+               UK, August 23-28, 2020, Proceedings, Part {II}},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {12347},
+  pages     = {158--174},
+  publisher = {Springer},
+  year      = {2020},
+  url       = {https://doi.org/10.1007/978-3-030-58536-5\_10},
+  doi       = {10.1007/978-3-030-58536-5\_10},
 }
 ```
 
